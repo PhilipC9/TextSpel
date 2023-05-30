@@ -19,6 +19,18 @@ namespace ArvSpel
         {
        
         }
+
+
+        // Detta är för att uppfylla kravet om "Utbyte av information sker mellan instanser"
+
+        // Händelsehanterare för att lyssna på attacker mot spelaren
+        public event Action<Character> Attacked;
+
+        // Metod för att trigga händelsen när spelaren blir attackerad
+        protected virtual void OnAttack(Character attacker) 
+        {
+            Attacked?.Invoke(attacker);
+        }
     }
 }
 

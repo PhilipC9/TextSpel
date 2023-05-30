@@ -5,6 +5,15 @@ class Knight : Character
 {
     public int Damage { get; set; }
 
+    // Händelsehanterare för att lyssna på attacker mot spelaren
+    public event Action<Character> Attacked;
+
+    // Metod för att trigga händelsen när spelaren blir attackerad
+    protected void NotifyPlayerAttacked(Character attacker)
+    {
+        Console.WriteLine($"You were attacked by {attacker.Name}!");
+    }
+
     public override void Attack(Character player)
     {
         Console.Clear();
@@ -30,6 +39,10 @@ class Knight : Character
             {
                 Console.WriteLine($"{player.Name} har {player.Health} HP kvar.");
             }
+
+            // Meddela att spelaren blev attackerad
+             NotifyPlayerAttacked(this);
+
         }, null, 2000, Timeout.Infinite);
 
         // Läs av spelarens inmatning och kontrollera om den matchar den slumpmässiga tangenten

@@ -44,6 +44,7 @@ class Program
             HealAmount = 50
         };
 
+
         // Skriver ut meddelanden för att introducera spelets inledning
         Console.WriteLine("Du går mot ett stort slott...");
         Console.WriteLine("Tryck Enter för att fortsätta...");
@@ -65,6 +66,7 @@ class Program
 
             // Spelaren attackerar riddaren
             player.Attack(knight);
+            // Meddela att spelaren blev attackerad
             Thread.Sleep(4000);
 
             // Om riddaren fortfarande har hälsa kvar, kontrar den med att attackera spelaren
