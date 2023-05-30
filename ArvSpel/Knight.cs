@@ -9,9 +9,10 @@ class Knight : Character
     public event Action<Character> Attacked;
 
     // Metod för att trigga händelsen när spelaren blir attackerad
+    // Skapad för att uppfylla "Utbyte av information sker mellan instanser"
     protected void NotifyPlayerAttacked(Character attacker)
     {
-        Console.WriteLine($"You were attacked by {attacker.Name}!");
+        Console.WriteLine($"Du blev attacked av {attacker.Name}!");
     }
 
     public override void Attack(Character player)
