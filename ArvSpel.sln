@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArvSpel", "ArvSpel\ArvSpel.csproj", "{125C19B3-34CE-46AD-9DBE-E6D0F5437802}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125C19B3-34CE-46AD-9DBE-E6D0F5437802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125C19B3-34CE-46AD-9DBE-E6D0F5437802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125C19B3-34CE-46AD-9DBE-E6D0F5437802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125C19B3-34CE-46AD-9DBE-E6D0F5437802}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6503CB8A-5D3F-4FBB-B705-73CB3D306B3B}
+	EndGlobalSection
+EndGlobal
