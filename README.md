@@ -1,1 +1,3 @@
-#  "Innehåller tre eller flera arv med minst ett fall av arv i flera led"
+#  Textbaserat spel som uppfyller 
+"Tre eller flera arv"
+"Minst ett fall av arv i flera led"
